@@ -1,0 +1,3 @@
+#!/bin/bash
+
+conda env create -f ../config/conda-environment.yml
