@@ -1,3 +1,3 @@
 #!/bin/bash
 
-conda env update -f ../config/conda-environment.yml --prune
+conda env update -f ../config/ape-examples.yml --prune

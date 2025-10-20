@@ -17,13 +17,19 @@ The JSON based REST API should meet the needs of most users wishing to consume d
 
 The Python package can be installed using <a href=https://pypi.org/project/pip/>Pip</a> from the Archipelagos Labs package repository. The <i>config</i> subfolder of the <i>python</i> folder there is a <i>requirements.txt</i> file listing the dependencies required to run examples, and a <a href=https://docs.conda.io/projects/conda/en/stable>Conda</a> environment file that can be used to create a new environment using that package manager. 
 
-The <i>scripts</i> subfolder of the <i>python</i> there are scripts that ae Windows Batch files and Bash scripts that may be used to build a Conda environment using the environment file described above, and to update an existing environment should the contents of the environment file be modified at any point in the future.
+The <i>scripts</i> subfolder of the <i>python</i> there are Windows Batch files and Bash scripts that may be used to build a Conda environment using the environment file described above, and to update an existing environment should the contents of the environment file be modified at any point in the future.
 
-Once a suitable virtual or conda environment has been created, the Python scripts located in the <i>src</i> subfolder or the <i>python</i> folder can be run as standalone Python scripts within such an environment. The scripts are named to reflect their purpose, although please also see the comment at the very top of each script for further details.   
+Once a suitable virtual or conda environment has been created, the Python scripts located in the <i>src</i> subfolder or the <i>python</i> folder can be run as standalone Python scripts within such an environment. The scripts are named to reflect their purpose, although please also see the comment at the very top of each script for further details.
+
+The credentials used to access the platform, and the URL of the Data Service component that the Python package sends requests to, can be directly supplied as parameters to the login function and constructor of the Client class, used in the various example Python scripts provided in the <i>src</i> subfolder of the <i>python</i> folder. 
+
+This information can also be supplied in an <i>ape.toml</i> file, an example of which is given in the <i>config</i> subfolder of the <i>python</i> directory. This Python package attempts to locate this file in 3 locations: if an environment variable APE_CONFIG_DIR is defined then it looks in the directory specified by this variable, if not found it then looks in the current working directory, and if still not found it looks in the <i>.ape</i> subdirectory of the user's home directory.     
 
 
 ## 3. JSON REST API
 
-TBC
+The JSON rest API may be used by all modern programming languages supporting HTTP requests, including : Python, C#, Java, and C++. Data may also be requested from the command line using a tool such as <a href=https://curl.se/>curl</a>, which is readily available on all modern operating systems, including Windows, Linux and MacOS.
+
+The <i>scripts</i> subfolder of the <i>json</i> there are Windows Batch files and Bash scripts that may be used to send requests using curl. In the <i>src</i> subfolder of the <i>json</i> folder there are example Python scripts that use the JSON REST API and only require the <a href=https://pypi.org/project/requests/>requests</a> package as a dependency, and do not use the APE Python package.  
 
 

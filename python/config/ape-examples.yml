@@ -1,0 +1,13 @@
+name: ape-examples
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+    - pip=25.2
+    - python=3.12.8
+    - pip:
+        - --extra-index-url https://ape-python-common:DJ9dxr31v6o6S29o3A0VkmlIn4z4ntdJK0U90Z2gB309MVWyeZQgJQQJ99BEACAAAAACgEkkAAASAZDOEsL2@pkgs.dev.azure.com/archipelagos-labs/packages/_packaging/ape-python-common/pypi/simple/
+        - --extra-index-url https://ape-python-server:DJ9dxr31v6o6S29o3A0VkmlIn4z4ntdJK0U90Z2gB309MVWyeZQgJQQJ99BEACAAAAACgEkkAAASAZDOEsL2@pkgs.dev.azure.com/archipelagos-labs/packages/_packaging/ape-python-server/pypi/simple/
+        - --extra-index-url https://ape-python-client:DJ9dxr31v6o6S29o3A0VkmlIn4z4ntdJK0U90Z2gB309MVWyeZQgJQQJ99BEACAAAAACgEkkAAASAZDOEsL2@pkgs.dev.azure.com/archipelagos-labs/packages/_packaging/ape-python-client/pypi/simple/
+        - ape-python-client==0.0.78
+        - ape-python-server==0.0.131

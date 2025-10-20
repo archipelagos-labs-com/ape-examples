@@ -1,1 +1,1 @@
-conda env create -f ../config/conda-environment.yml
+conda env create -f ../config/ape-examples.yml
