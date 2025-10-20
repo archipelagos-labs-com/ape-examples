@@ -28,7 +28,7 @@ This information can also be supplied in an <i>ape.toml</i> file, an example of 
 
 ## 3. JSON REST API
 
-The JSON rest API may be used by all modern programming languages supporting HTTP requests, including : Python, C#, Java, and C++. Data may also be requested from the command line using a tool such as <a href=https://curl.se/>curl</a>, which is readily available on all modern operating systems, including Windows, Linux and MacOS.
+The JSON REST API may be used in all modern programming languages that support HTTP requests; these including the following languages and Microsoft Excel: Python, C#, Java, and C++. Data may also be requested from the command line using a tool such as <a href=https://curl.se/>curl</a>, which is readily available on all modern operating systems, including Windows, Linux, and MacOS.
 
 The <i>scripts</i> subfolder of the <i>json</i> there are Windows Batch files and Bash scripts that may be used to send requests using curl. In the <i>src</i> subfolder of the <i>json</i> folder there are example Python scripts that use the JSON REST API and only require the <a href=https://pypi.org/project/requests/>requests</a> package as a dependency, and do not use the APE Python package.  
 
