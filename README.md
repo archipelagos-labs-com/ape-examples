@@ -33,5 +33,3 @@ The JSON REST API may be used in all modern programming languages and Microsoft 
 The <i>scripts</i> subfolder of the <i>json</i> folder there are Windows Batch files and Bash scripts that may be used to send requests using curl. In the <i>src</i> subfolder of the <i>json</i> folder there are example Python scripts that use the JSON REST API and only require the <a href=https://pypi.org/project/requests/>requests</a> package as a dependency, and do not use the APE Python package.  
 
 The <i>excel</i> subfolder of the <i>json</i> folder there are Microsoft Excel spreadsheets that provide examples of retrieving device data and metadata (i.e. concerning the devices defined for a specified tenant). Please follow the instructions in these spreadsheets as values need to be provided in certain cells to allow them to connect to APE. 
-
-
