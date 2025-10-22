@@ -6,4 +6,6 @@ dependencies:
     - pip=25.2
     - python=3.12.8
     - pip:
-        - ape-python-client==0.0.78
+        - --extra-index-url https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-common/pypi/simple/
+        - --extra-index-url https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-client/pypi/simple/
+        - ape-python-client==0.0.80
