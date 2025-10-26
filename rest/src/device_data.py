@@ -8,7 +8,7 @@ from pandas import Timestamp
 
 # Devices and fields of interest
 
-device = "70b3d57ba00034b1"
+device = "70b3d57ba00007b0"
 fields = ["air_temperature", "air_humidity"]
 
 # Period of interest
