@@ -1,5 +1,5 @@
 """
-Retrieve data for a specified device in a given time period.
+Retrieve data for a specified device in a given time period using credentials supplied in an ape.toml file.
 """
 from ape_client import Client
 
@@ -8,7 +8,7 @@ from pandas import Timestamp
 
 # Devices and fields of interest
 
-device = "70b3d57ba00034b1"
+device = "70b3d57ba00007b0"
 fields = ["air_temperature", "air_humidity"]
 
 # Period of interest

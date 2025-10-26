@@ -1,10 +1,19 @@
 """
-Retrieve data for a specified device in a given time period.
+Retrieve data for a specified device in a given time period using credentials supplied directly.
 """
 from ape_client import Client
 
 from pandas import Timestamp
 
+
+# User credentials
+
+username = "<PROVIDE-USERNAME>"
+password = "<PROVIDE-PASSWORD>"
+
+# URL for the Data Service
+
+data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
 # Devices and fields of interest
 
@@ -18,8 +27,8 @@ end = Timestamp(year=2025, month=5, day=25, hour=23, minute=59)
 
 # Login to the platform
 
-client = Client()
-client.login()
+client = Client(data_service=data_service)
+client.login(username=username, password=password)
 
 # Retrieve and display device data
 
