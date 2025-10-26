@@ -21,7 +21,7 @@ The <i>scripts</i> subfolder of the <i>python</i> there are Windows Batch files 
 
 Once a suitable virtual or conda environment has been created, the Python scripts located in the <i>src</i> subfolder or the <i>python</i> folder can be run as standalone Python scripts within such an environment. The scripts are named to reflect their purpose, although please also see the comment at the very top of each script for further details.
 
-The credentials used to access the platform, and the URL of the Data Service component that the Python package sends requests to, can be supplied as parameters to the <i>login</i> function and constructor of the <i>Client</i> class, as shown in the <i>supply_credentials.py</i> Python script in the <i>src</i> subfolder of the <i>python</i> folder. 
+The credentials used to access the platform, and the URL of the Data Service component that the Python package sends requests to, can be supplied as parameters to the <i>login</i> function and constructor of the <i>Client</i> class, as shown in the <i>supply_credentials.py</i> Python script in the <i>src</i> subfolder of the <i>python</i> folder. The credentials and URL should be supplied to you by your customer success representative at Archipelagos Labs.  
 
 All other examples in the <i>python</i> folder use credentials and a URL obtained from an <i>ape.toml</i> file, an example of which is given in the <i>config</i> subfolder of the <i>python</i> folder. The Python package looks for this file in 3 locations: first in the current working directory of the script, then if an environment variable APE_CONFIG_DIR is defined in the directory specified by this variable, and then in the <i>.ape</i> subdirectory of the user's home directory.     
 
