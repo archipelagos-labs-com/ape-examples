@@ -15,7 +15,7 @@ The JSON based REST API should meet the needs of most users wishing to consume d
 
 ## 2. Python Package
 
-The Python package (<i>ape-python-client</i>) can be installed using <a href=https://pypi.org/project/pip/>Pip</a> or other popular Python package managers from the Archipelagos Labs package repository (<i>https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-client/pypi/simple/</i>). The <i>config</i> subfolder of the <i>python</i> folder contains a <i>requirements.txt</i> file listing the dependencies required to run examples, and a <a href=https://docs.conda.io/projects/conda/en/stable>Conda</a> environment file that can be used to create a new environment using the Conda package manager. 
+The Python package (<i>ape-python-client</i>) can be installed using <a href=https://pypi.org/project/pip/>Pip</a> from the Archipelagos Labs package repository (<i>https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-client/pypi/simple/</i>). The <i>config</i> subfolder of the <i>python</i> folder contains a <i>requirements.txt</i> file listing the dependencies required to run examples, and a <a href=https://docs.conda.io/projects/conda/en/stable>Conda</a> environment file that can be used to create a new environment using the Conda package manager. 
 
 The <i>scripts</i> subfolder of the <i>python</i> there are Windows Batch files and Bash scripts that may be used to build a Conda environment using the environment file described above, and to update an existing environment should the contents of the environment file be modified at any point in the future.
 
@@ -23,7 +23,7 @@ Once a suitable virtual or conda environment has been created, the Python script
 
 The credentials used to access the platform, and the URL of the Data Service component that the Python package sends requests to, can be supplied as parameters to the <i>login</i> function and constructor of the <i>Client</i> class, as shown in the <i>supply_credentials.py</i> Python script in the <i>src</i> subfolder of the <i>python</i> folder. 
 
-All other examples in the <i>src</i> subfolder of the <i>python</i> folder use credentials and a URL obtained from an <i>ape.toml</i> file. An example of an <i>ape.toml</i> file is given in the <i>config</i> subfolder of the <i>python</i> directory. The Python package attempts to locate this file in 3 locations: it first looks in the current working directory of a script, if not found and an environment variable APE_CONFIG_DIR is defined then it looks in the directory specified by this variable, and if still not found it then looks in the <i>.ape</i> subdirectory of the user's home directory.     
+All other examples in the <i>python</i> folder use credentials and a URL obtained from an <i>ape.toml</i> file, an example of which is given in the <i>config</i> subfolder of the <i>python</i> folder. The Python package looks for this file in 3 locations: first in the current working directory of the script, then if an environment variable APE_CONFIG_DIR is defined in the directory specified by this variable, and then in the <i>.ape</i> subdirectory of the user's home directory.     
 
 
 ## 3. JSON REST API
