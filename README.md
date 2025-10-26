@@ -17,7 +17,7 @@ The JSON based REST API should meet the needs of most users wishing to consume d
 
 The Python package (<i>ape-python-client</i>) can be installed using <a href=https://pypi.org/project/pip/>Pip</a> from the Archipelagos Labs package repository (<i>https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-client/pypi/simple/</i>). The <i>config</i> subfolder of the <i>python</i> folder contains a <i>requirements.txt</i> file listing the dependencies required to run examples, and a <a href=https://docs.conda.io/projects/conda/en/stable>Conda</a> environment file that can be used to create a new environment using the Conda package manager. 
 
-The <i>scripts</i> subfolder of the <i>python</i> contains Windows Batch files and Bash scripts that may be used to build a Conda environment using the Conda environment file (<i>ape-examples.yml</i>)described above, and to update an existing Conda environment (<i>ape-examples</i>)should the contents of the environment file be modified at any point in the future.
+The <i>scripts</i> subfolder of the <i>python</i> contains Windows Batch files and Bash scripts that may be used to build a Conda environment using the Conda environment file (<i>ape-examples.yml</i>) described above, and to update an existing Conda environment (<i>ape-examples</i>) should the contents of the environment file be modified at any point in the future.
 
 Once a suitable virtual or conda environment has been created, the Python scripts located in the <i>src</i> subfolder or the <i>python</i> folder can be run as standalone Python scripts within such an environment. The scripts are named to reflect their purpose, although please also see the comment at the top of each script for further details.
 
