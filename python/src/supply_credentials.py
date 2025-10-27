@@ -22,8 +22,8 @@ fields = ["air_temperature", "air_humidity"]
 
 # Period of interest
 
-start = Timestamp(year=2025, month=4, day=25, hour=0, minute=0)
-end = Timestamp(year=2025, month=5, day=25, hour=23, minute=59)
+start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
+end = Timestamp(year=2025, month=10, day=31, hour=23, minute=59)
 
 # Login to the platform
 
