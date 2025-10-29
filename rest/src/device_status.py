@@ -8,11 +8,15 @@ import json
 # User credentials
 
 username = "<PROVIDE-USERNAME>"
+username = "admin"
+
 api_key = "<PROVIDE-API-KEY>"
+api_key = '54e696ee-243b-46bb-9b75-ea1c5f94e70e'
 
 # URL for the Data Service
 
 data_service = "<PROVIDE-DATA-SERVICE-URL>"
+data_service = "http://localhost:32000"
 
 # Devices and fields of interest
 
@@ -32,13 +36,14 @@ request = {
     "networkDeviceId": device,
     "fields": fields,
     "start": start,
-    "end": end
+    "end": end,
+    "tenantName": "wicks-farm"
 }
 
 # Send the request
 
 request_url = data_service + '/v1/device-status/get'
-response = requests.post(data_service, json=request)
+response = requests.post(request_url, json=request)
 
 if response.status_code == 200:
     # Parse the response

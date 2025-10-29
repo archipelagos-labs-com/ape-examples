@@ -38,7 +38,7 @@ request = {
 # Send the request
 
 request_url = data_service + '/v1/device-data/get'
-response = requests.post(data_service, json=request)
+response = requests.post(request_url, json=request)
 
 if response.status_code == 200:
     # Parse the response
