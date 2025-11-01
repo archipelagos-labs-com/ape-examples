@@ -37,7 +37,5 @@ The <i>excel</i> subfolder of the <i>json</i> folder there are Microsoft Excel s
 <picture align="center">
   <img alt="" src="images/open-api.png">
 </picture>
-
-
-
-<a href=https://swagger.io/docs/specification/v3_0/about/>Open API</a> documentation available for the endpoints accessible via the JSON REST API. This is available at the standard location for such documentation for a Data Service URL, under the <i>/docs</i> path. Thus, if your Data Service URL is <i>https://my-project.archipelagos-labs.com</i> then the Open API documentation will be available at <i>https://my-project.archipelagos-labs.com/docs</i>. An example of the homepage for such documentation can be seen above  
+<br>
+<br><a href=https://swagger.io/docs/specification/v3_0/about/>Open API</a> documentation available for the endpoints accessible via the JSON REST API. This is available at the standard location for such documentation for a Data Service URL, under the <i>/docs</i> path. Thus, if your Data Service URL is <i>https://my-project.archipelagos-labs.com</i> then the Open API documentation will be available at <i>https://my-project.archipelagos-labs.com/docs</i>. An example of the homepage for such documentation can be seen above  
