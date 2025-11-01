@@ -42,7 +42,7 @@ request = {
 
 # Send the request
 
-request_url = data_service + '/v1/device-status/get'
+request_url = data_service + '/v1/device/status/get'
 response = requests.post(request_url, json=request)
 
 if response.status_code == 200:

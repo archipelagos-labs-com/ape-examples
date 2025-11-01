@@ -1,1 +1,1 @@
- ape-python-client==0.0.86
+ ape-python-client==0.0.88
