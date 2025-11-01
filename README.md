@@ -1,5 +1,5 @@
 <picture align="center">
-  <img alt="Pandas Logo" src="images/logo.png">
+  <img alt="" src="images/logo.png">
 </picture>
 
 
@@ -33,3 +33,9 @@ The JSON REST API may be used in all modern programming languages and Microsoft 
 The <i>scripts</i> subfolder of the <i>json</i> folder there are Windows Batch files and Bash scripts that may be used to send requests using curl. In the <i>src</i> subfolder of the <i>json</i> folder there are example Python scripts that use the JSON REST API and only require the <a href=https://pypi.org/project/requests/>requests</a> package as a dependency, and do not use the APE Python package.  
 
 The <i>excel</i> subfolder of the <i>json</i> folder there are Microsoft Excel spreadsheets that provide examples of retrieving device data and metadata (i.e. concerning the devices defined for a specified tenant). Please follow the instructions in these spreadsheets as values need to be provided in certain cells to allow them to connect to APE. 
+
+<picture align="center">
+  <img alt="" src="images/open-api.png">
+</picture>
+
+<a href=https://swagger.io/docs/specification/v3_0/about/>Open API</a> documentation available for the endpoints accessible via the JSON REST API. This is available at the standard location for such documentation for a Data Service URL, under the <i>/docs</i> path. Thus, if your Data Service URL is <i>https://my-project.archipelagos-labs.com</i> then the Open API documentation will be available at <i>https://my-project.archipelagos-labs.com/docs</i>. An example of the homepage for such documentation can be seen above  
