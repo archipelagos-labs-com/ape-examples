@@ -1,5 +1,5 @@
 <picture align="center">
-  <img alt="Pandas Logo" src="./ArchipelagosLabsLogo.png">
+  <img alt="Pandas Logo" src="logo.png">
 </picture>
 
 
