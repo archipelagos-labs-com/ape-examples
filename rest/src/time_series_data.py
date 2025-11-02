@@ -16,10 +16,10 @@ data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
 # Time series code and fields of interest
 
-code = "OM-WS-FORECAST-H"
+code = "OM-SR-FORECAST-H"
 fields = ["forecast"]
 
-# Period of interest
+# Period of interest (UTC)
 
 start = "2025-10-01T00:00:00"
 end = "2025-10-01T23:59:59"
@@ -52,16 +52,15 @@ if response.status_code == 200:
     if error_code == 0:
         time_series = response_json["timeSeries"]
 
-        print(f'An error code of {error_code} was returned signalling that the request was successful.')
-        print(f'The JSON response received from the Data Service was:\n')
+        print(f'The time series data received from the Data Service was:\n')
         print(json.dumps(time_series, indent=4))
     else:
         error_message = response_json["errorMessage"]
 
-        print(f'An error code of {error_code} was returned signalling that an error occurred.')
+        print(f'An error code of {error_code} was returned.')
         print(f'The associated error message was "{error_code}".')
         print(f'The JSON response received from the Data Service was:\n')
         print(json.dumps(response_json, indent=4))
 else:
-    print(f'A HTTP code of {response.status_code} was returned signalling that an error occurred.')
+    print(f'A HTTP code of {response.status_code} was returned.')
     print(f"The associated error message was '{response.content.decode("utf-8")}'.")

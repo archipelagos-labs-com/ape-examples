@@ -6,7 +6,7 @@ from ape_client import Client
 from pandas import Timestamp
 
 
-# Period of interest
+# Period of interest (UTC)
 
 start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
 end = Timestamp(year=2025, month=10, day=1, hour=23, minute=59)

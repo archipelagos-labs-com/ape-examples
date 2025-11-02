@@ -8,10 +8,10 @@ from pandas import Timestamp
 
 # Devices and fields of interest
 
-device = "70b3d57ba00007b0"
+network_device_id = "70b3d57ba00007b0"
 fields = ["air_temperature", "air_humidity"]
 
-# Period of interest
+# Period of interest (UTC)
 
 start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
 end = Timestamp(year=2025, month=10, day=1, hour=23, minute=59)
@@ -23,5 +23,5 @@ client.login()
 
 # Retrieve and display device data
 
-df = client.get_device_data(network_device_id=device, lower_limit=start, upper_limit=end)
+df = client.get_device_data(network_device_id=network_device_id, lower_limit=start, upper_limit=end)
 print(df)

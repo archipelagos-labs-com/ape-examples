@@ -8,7 +8,7 @@ from pandas import Timestamp
 
 # Time series code and fields of interest
 
-code = "OM-WF-FORECAST-H"
+code = "OM-SR-FORECAST-H"
 fields = ["forecast"]
 
 # Period of interest

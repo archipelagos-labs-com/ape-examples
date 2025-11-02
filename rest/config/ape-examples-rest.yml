@@ -1,0 +1,9 @@
+name: ape-examples-rest
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+    - pip=25.2
+    - python=3.12.8
+    - pip:
+        - requests>=2.32.5
