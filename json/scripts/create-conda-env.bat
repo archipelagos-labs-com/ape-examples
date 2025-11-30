@@ -1,0 +1,1 @@
+conda env create -f ../config/ape-examples-json.yml

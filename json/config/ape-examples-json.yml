@@ -1,4 +1,4 @@
-name: ape-examples-rest
+name: ape-examples-json
 channels:
   - defaults
   - conda-forge

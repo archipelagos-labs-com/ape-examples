@@ -8,3 +8,4 @@ password = ""
 [service]
 
 data_service = ""
+streaming_service = ""

@@ -7,7 +7,7 @@
 
 ## 1. Introduction
 
-Provides examples of using the APIs and endpoints available for Analytics Platform for the Environment (APE). There are currently two ways accessing APE programmatically, via a Python package thats wraps all calls made to the platform and unpacks the messages received back, and using a JSON based HTTP REST API.
+This repo provides examples of using the APIs available for Analytics Platform for the Environment (APE). There are two ways accessing APE programmatically, via a Python package thats wraps all calls made to the platform and unpacks the messages received back, and using a JSON based HTTP REST and Webscoket API.
 
 Where possible we would encourage users to make use of the Python package. This is because the package uses a binary format for all requests and responses, which can prove more efficient than JSON when relatively large amount of data are returned, such as when data published by one or more IoT devices is requested.
 
@@ -38,4 +38,11 @@ The <i>excel</i> subfolder of the <i>json</i> folder there are Microsoft Excel s
   <img alt="" src="images/open-api.png">
 </picture>
 <br>
-<br><a href=https://swagger.io/docs/specification/v3_0/about/>Open API</a> documentation available for the endpoints accessible via the JSON REST API. This is available at the standard location for such documentation for a Data Service URL, under the <i>/docs</i> path. Thus, if your Data Service URL is <i>https://my-project.archipelagos-labs.com</i> then the Open API documentation will be available at <i>https://my-project.archipelagos-labs.com/docs</i>. An example of the homepage for such documentation can be seen above  
+<br><a href=https://swagger.io/docs/specification/v3_0/about/>Open API</a> documentation available for the endpoints accessible via the JSON REST API. This is available at the standard location for such documentation for a Data Service URL, under the <i>/docs</i> path. Thus, if your Data Service URL is <i>https://my-project.archipelagos-labs.com</i> then the Open API documentation will be available at <i>https://my-project.archipelagos-labs.com/docs</i>. An example of the homepage for such documentation can be seen above.
+
+
+## 4. JSON Websocket API
+
+The JSON Websocket API may be used in all modern programming languages and Microsoft Excel; including the following: Python, C#, Java, and C++. Data may also be requested from the command line using a tool such as <a href=https://curl.se/>curl</a>, which is readily available on all modern operating systems, including Windows, Linux, and MacOS.
+
+The <i>scripts</i> subfolder of the <i>json</i> folder there are Windows Batch files and Bash scripts that may be used to send requests using curl. In the <i>src</i> subfolder of the <i>json</i> folder there are example Python scripts that use the JSON Websocket API and only require the <a href=https://pypi.org/project/requests/>requests</a> package as a dependency, and do not use the APE Python package.  

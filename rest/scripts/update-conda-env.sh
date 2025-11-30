@@ -1,3 +1,0 @@
-#!/bin/bash
-
-conda env update -f ../config/ape-examples-rest.yml --prune
