@@ -9,7 +9,7 @@ from pandas import Timestamp
 # Devices and fields of interest
 
 network_device_id = "70b3d57ba00007b0"
-fields = ["air_temperature", "air_humidity"]
+fields = ["ambient_temperature", "relative_humidity"]
 
 # Period of interest (UTC)
 
@@ -23,5 +23,5 @@ client.login()
 
 # Retrieve and display device data
 
-df = client.get_device_data(network_device_id=network_device_id, lower_limit=start, upper_limit=end)
+df = client.get_device_data(network_device_id=network_device_id, lower_limit=start, upper_limit=end, fields=fields)
 print(df)

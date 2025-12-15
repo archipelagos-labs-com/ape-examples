@@ -17,7 +17,7 @@ data_service = "<PROVIDE-DATA-SERVICE-URL>"
 # Devices and fields of interest
 
 network_device_id = "70b3d57ba00007b0"
-fields = ["air_temperature", "air_humidity"]
+fields = ["ambient_temperature", "relative_humidity"]
 
 # Period of interest (UTC)
 
