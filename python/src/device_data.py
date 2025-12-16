@@ -6,15 +6,18 @@ from ape_client import Client
 from pandas import Timestamp
 
 
-# Devices and fields of interest
+# Device of interest
 
-network_device_id = "70b3d57ba00007b0"
+network_device_id = "<PROVIDE-NETWORK-DEVICE-ID>"
+
+# Fields of interest
+
 fields = ["ambient_temperature", "relative_humidity"]
 
 # Period of interest (UTC)
 
 start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
-end = Timestamp(year=2025, month=10, day=1, hour=23, minute=59)
+end = Timestamp(year=2025, month=10, day=31, hour=23, minute=59)
 
 # Login to the platform
 

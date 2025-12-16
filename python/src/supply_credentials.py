@@ -15,9 +15,12 @@ password = "<PROVIDE-PASSWORD>"
 
 data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
-# Devices and fields of interest
+# Device of interest
 
-device = "70b3d57ba00007b0"
+device = "<PROVIDE-NETWORK-DEVICE-ID>"
+
+# Fields of interest
+
 fields = ["air_temperature", "air_humidity"]
 
 # Period of interest

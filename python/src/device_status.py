@@ -6,9 +6,12 @@ from ape_client import Client
 from pandas import Timestamp
 
 
-# Devices and fields of interest
+# Device of interest
 
-network_device_id = "70b3d57ba00007b0"
+network_device_id = "<PROVIDE-NETWORK-DEVICE-ID>"
+
+# Fields of interest
+
 fields = ["batteryLevel", "margin"]
 
 # Period of interest (UTC)

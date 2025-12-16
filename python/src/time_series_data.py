@@ -6,9 +6,12 @@ from ape_client import Client
 from pandas import Timestamp
 
 
-# Time series code and fields of interest
+# Time series of interest
 
-code = "OM-SR-FORECAST-H"
+code = "<PROVIDE-TIME-SERIES-CODE>"
+
+# Fields of interest
+
 fields = ["forecast"]
 
 # Period of interest
