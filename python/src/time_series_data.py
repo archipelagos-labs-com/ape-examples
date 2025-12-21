@@ -1,14 +1,14 @@
 """
-Retrieve data for a specified time series in a given time period using credentials supplied in an ape.toml file.
+Retrieve time series data for a specified entity in a given time period using credentials supplied in an ape.toml file.
 """
 from ape_client import Client
 
 from pandas import Timestamp
 
 
-# Time series of interest
+# Entity of interest
 
-code = "<PROVIDE-TIME-SERIES-CODE>"
+code = "<PROVIDE-ENTITY-CODE>"
 
 # Fields of interest
 

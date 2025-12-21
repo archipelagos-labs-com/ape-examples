@@ -1,5 +1,5 @@
 """
-Retrieve data for a specified device in a given time period using credentials supplied directly.
+Retrieve time series data for a specified entity in a given time period using credentials supplied directly.
 """
 import requests
 import json
@@ -14,9 +14,9 @@ api_key = "<PROVIDE-API-KEY>"
 
 data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
-# Time series of interest
+# Entity of interest
 
-code = "<PROVIDE-TIME-SERIES-CODE>"
+code = "<PROVIDE-ENTITY-CODE>"
 
 # Fields of interest
 
