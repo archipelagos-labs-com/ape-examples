@@ -40,7 +40,7 @@ request = {
 
 # Send the request
 
-request_url = data_service + '/v1/time-series/data/get'
+request_url = data_service + '/v1/entity/time-series/get'
 response = requests.post(request_url, json=request)
 
 if response.status_code == 200:
