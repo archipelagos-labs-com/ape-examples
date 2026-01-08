@@ -8,4 +8,4 @@ dependencies:
     - pip:
         - --extra-index-url https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-common/pypi/simple/
         - --extra-index-url https://pkgs.dev.azure.com/archipelagos-labs/public-packages/_packaging/ape-python-client/pypi/simple/
-        - ape-python-client==0.0.102
+        - ape-python-client==0.0.103
