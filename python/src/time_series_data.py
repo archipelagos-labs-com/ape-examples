@@ -10,10 +10,6 @@ from pandas import Timestamp
 
 code = "<PROVIDE-ENTITY-CODE>"
 
-# Fields of interest
-
-fields = ["forecast"]
-
 # Period of interest
 
 start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
@@ -26,5 +22,5 @@ client.login()
 
 # Retrieve and display time series data
 
-df = client.get_time_series_data(code=code, fields=fields, start=start, end=end)
+df = client.get_time_series_data(code=code, start=start, end=end)
 print(df)

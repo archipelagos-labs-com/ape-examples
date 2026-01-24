@@ -18,7 +18,7 @@ client.login()
 
 # Retrieve metadata for all accessible devices
 
-devices = client.get_devices()
+devices = client.get_device()
 
 for device in devices:
     # Retrieve and display data for this device

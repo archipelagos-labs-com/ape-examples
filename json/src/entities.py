@@ -1,5 +1,5 @@
 """
-Retrieve time series data for a specified entity in a given time period using credentials supplied directly.
+Retrieve the entities that a specified user can access using credentials supplied directly.
 """
 import requests
 import json
@@ -14,33 +14,16 @@ api_key = "<PROVIDE-API-KEY>"
 
 data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
-# Entity of interest
-
-code = "<PROVIDE-ENTITY-CODE>"
-
-# Fields of interest
-
-fields = ["forecast"]
-
-# Period of interest (UTC)
-
-start = "2025-10-01T00:00:00"
-end = "2025-10-01T23:59:59"
-
-# JSON request to send; remove "fields" if you want all fields for an entity
+# JSON request for retrieving entities
 
 request = {
     "username": username,
-    "apiKey": api_key,
-    "code": code,
-    "fields": fields,
-    "start": start,
-    "end": end
+    "apiKey": api_key
 }
 
 # Send the request
 
-request_url = data_service + '/v1/entity/time-series/get'
+request_url = data_service + '/v1/entity/get'
 response = requests.post(request_url, json=request)
 
 if response.status_code == 200:
@@ -53,10 +36,10 @@ if response.status_code == 200:
     error_code = response_json["errorCode"]
 
     if error_code == 0:
-        time_series = response_json["timeSeries"]
+        entities = response_json["entities"]
 
-        print(f'The time series data received from the Data Service was:\n')
-        print(json.dumps(time_series, indent=4))
+        print(f'The entities received from the Data Service was:\n')
+        print(json.dumps(entities, indent=4))
     else:
         error_message = response_json["errorMessage"]
 

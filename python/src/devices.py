@@ -11,5 +11,5 @@ client.login()
 
 # Retrieve and display devices
 
-devices = client.get_devices()
+devices = client.get_device()
 print(devices)
