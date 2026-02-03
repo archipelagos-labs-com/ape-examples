@@ -18,14 +18,10 @@ data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
 code = "<PROVIDE-ENTITY-CODE>"
 
-# Fields of interest
-
-fields = ["forecast"]
-
 # Period of interest (UTC)
 
-start = "2025-10-01T00:00:00"
-end = "2025-10-01T23:59:59"
+start = "2026-01-25T00:00:00"
+end = "2026-01-25T23:59:59"
 
 # JSON request to send; remove "fields" if you want all fields for an entity
 
@@ -33,7 +29,6 @@ request = {
     "username": username,
     "apiKey": api_key,
     "code": code,
-    "fields": fields,
     "start": start,
     "end": end
 }
