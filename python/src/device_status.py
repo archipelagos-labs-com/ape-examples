@@ -10,10 +10,6 @@ from pandas import Timestamp
 
 network_device_id = "<PROVIDE-NETWORK-DEVICE-ID>"
 
-# Fields of interest
-
-fields = ["batteryLevel", "margin"]
-
 # Period of interest (UTC)
 
 start = Timestamp(year=2025, month=10, day=1, hour=0, minute=0)
@@ -26,5 +22,5 @@ client.login()
 
 # Retrieve and display data
 
-df = client.get_device_status(network_device_id=network_device_id, fields=fields, lower_limit=start, upper_limit=end)
+df = client.get_device_status(network_device_id=network_device_id, start=start, end=end)
 print(df)
