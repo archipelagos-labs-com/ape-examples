@@ -14,11 +14,18 @@ api_key = "<PROVIDE-API-KEY>"
 
 data_service = "<PROVIDE-DATA-SERVICE-URL>"
 
+# Regular expression used to filter the entities returned by their code.
+#
+# The regular expression given below will match the code for all entities.
+
+code = ".*"
+
 # JSON request for retrieving entities
 
 request = {
     "username": username,
-    "apiKey": api_key
+    "apiKey": api_key,
+    "code": code
 }
 
 # Send the request
